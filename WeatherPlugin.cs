@@ -1,0 +1,20 @@
+﻿using Microsoft.SemanticKernel;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Reflection.Metadata.Ecma335;
+using System.Text;
+
+namespace UsingSemanticKernelFromNET
+{
+    public class WeatherPlugin
+    {
+        [KernelFunction]
+        [Description("URL to access today's weather in Southwell Nottinghamshire")]
+        public string GetWeather()
+        {
+
+            return "13:39\r\n\r\nSeeing different weather?\r\nRain\r\n13\r\n°C\r\nRain\r\nFeels like\r\n‎12°\r\nBring an umbrella as rain is expected. The high will be 14°.\r\n\r\nPollen\r\nVery Low\r\nWind\r\n14 km/h\r\nHumidity\r\n67%\r\nVisibility\r\n15.7 km\r\nPressure\r\n1010 mb\r\nDew point\r\n7°\r\nWeather mini map15:52\r\n\r\n\r\n\r\nRain to continue for at least 2 hours.\r\nOpen Map\r\n\r\n13:40\r\n13:44\r\n13:48\r\n13:52\r\n13:56\r\n14:00\r\n14:04\r\n14:08\r\n14:12\r\n14:16\r\n14:20\r\n14:24\r\n14:28\r\n14:32\r\n14:36\r\n14:40\r\n14:44\r\n14:48\r\n14:52\r\n14:56\r\n15:00\r\n15:04\r\n15:08\r\n15:12\r\n15:16\r\n15:20\r\n15:24\r\n15:28\r\n15:32\r\n15:36\r\n15:40\r\n15:44\r\n15:48\r\n15:52\r\n15:56\r\n16:00\r\n16:04\r\n16:08\r\n16:12\r\n16:16\r\n16:20\r\n16:24\r\n16:28\r\n16:32\r\n16:36\r\n16:40\r\n16:44\r\n\r\nHourly\r\n\r\nOverview\r\n\r\nPrecipitation\r\n\r\nWind\r\n\r\nAir Quality\r\n\r\nHumidity\r\n\r\nCloud cover\r\n\r\nPressure\r\n\r\nUV\r\n\r\nVisibility\r\n\r\nFeels like\r\n\r\nChart\r\n\r\nList\r\n\r\n\r\n17\r\nYesterday\r\nDay: Light rain showers\r\n14°\r\n6°\r\n\r\n18\r\nToday\r\nDay: Rain\r\nNight: Light rain\r\n14°\r\n10°\r\n\r\n19\r\nTue\r\nDay: Rain\r\n17°\r\n11°\r\n\r\n20\r\nWed\r\nDay: Mostly cloudy\r\n18°\r\n11°\r\n\r\n21\r\nThu\r\nDay: Mostly cloudy\r\n21°\r\n12°\r\n\r\n22\r\nFri\r\nDay: Partly sunny\r\n25°\r\n15°\r\n\r\n23\r\nSat\r\nDay: Mostly cloudy\r\n22°\r\n11°\r\n\r\n24\r\nSun\r\nDay: Partly sunny\r\n25°\r\n12°\r\n\r\n25\r\nMon\r\nDay: Mostly sunny\r\n26°\r\n13°\r\n\r\n26\r\nTue\r\nDay: Mostly sunny\r\n26°\r\n12°\r\n\r\n27\r\nWed\r\nDay: Partly sunny\r\n23°\r\n12°\r\nOverview\r\n\r\nFeels like\r\n-10°5°20°35°\r\n11:00\r\n12°\r\nNow\r\n13°\r\n15:00\r\n14°\r\n17:00\r\n14°\r\n19:00\r\n13°\r\n21:00\r\n11°\r\n23:00\r\n11°\r\nTue 19\r\n01:00\r\n10°\r\n03:00\r\n10°\r\n05:00\r\n10°\r\n07:00\r\n11°\r\n09:00\r\n12°\r\n04:59\r\n21:00\r\n83%\r\n51%\r\n19%\r\n11%\r\n12%\r\n31%\r\n74%\r\n88%\r\n86%\r\n71%\r\n\r\n\r\nTemperature\r\nMoon phase\r\n:\r\nWaxing Crescent\r\nWeather details13:39\r\nSuggestions for your day\r\nTemperature\r\n13°\r\nRising\r\nRising\r\nRising with a peak of 14° at 15:00. Overnight low of 10° at 00:00.\r\nFeels like\r\nDominant factor: none\r\nFeels like:12°\r\nTemperature:13°\r\nComfortable\r\nComfortable\r\nFeels colder than the actual temperature.\r\nCloud cover\r\nCloudy\r\nCloudy (93%)\r\n\r\nSteady with mostly cloudy sky at 13:39. Cloudy sky expected in the evening.\r\nPrecipitation\r\n0.8cm\r\nIn next 24h\r\nRain\r\nRain\r\nRaining now\r\nWind\r\nNSWE\r\nFrom S (190°)\r\n14\r\nkm/h\r\nWind Speed\r\n23\r\nkm/h\r\nWind Gust\r\nForce: 3 (Gentle Breeze)\r\n\r\nSteady with averages holding at 15 km/h (gusts to 28) expected from S through the evening. Evening peak average wind speed of 16 km/h (gusts to 27) expected at 19:00 coming from SSW.\r\nHumidity\r\n67%\r\nRelative Humidity\r\n7°\r\nDew point\r\nNormal\r\n\r\nSteady at 67%.\r\nUV\r\n3\r\nModerate\r\n\r\nMaximum UV exposure for today will be moderate, expected at 15:00.\r\nAQI\r\n67\r\nModerate\r\n\r\nDeteriorating air quality with primary pollutant: O₃ 34 ppb.\r\nPollen\r\n28\r\nMain Allergy: Grass\r\nLow\r\n\r\nSimilar to yesterday. Main allergy: Grass.\r\nVisibility\r\n15.7\r\nkm\r\nExcellent\r\n\r\nDeteriorating with a low visibility distance of 5 km expected at 14:00. Excellent visibility expected in the evening.\r\nPressure\r\n1010\r\nmb\r\n13:39 (Now)\r\nRising slowly\r\nRising slowly\r\nRising slowly in the last 3 hours. Expected to fall slowly in the next 3 hours.\r\nSun\r\n15 hrs 58 mins\r\n05:01\r\nSunrise\r\n21:00\r\nSunset\r\nMoon\r\n18 hrs 44 mins\r\n05:24\r\nMoonrise\r\n00:08\r\nMoonset\r\nMoon phase\r\n4%\r\nPhase of moon\r\nNext full moon\r\n31 May";
+        }
+      }
+}
